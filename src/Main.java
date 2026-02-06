@@ -1,47 +1,43 @@
 
-import java.util.Scanner;
-
-public class Main {
-    static Scanner scanner = new Scanner(System.in);
-    static String name;
+String name;
 //    Definieer hier de variabelen
 
 
-    public static void main(String[] args) {
-        printMenu();
-        setName();
+void main(String[] args) {
+    printMenu();
+    setName();
 
 //        Roep hier de andere methodes aan
 
-        printProfile();
-        System.out.println("Afsluiten. Tot ziens!");
-    }
+    printProfile();
+    IO.println("Afsluiten. Tot ziens!");
+}
 
-    private static void printMenu() {
-        System.out.println("======================================");
-        System.out.println("Welkom bij de profiel app");
-        System.out.println("Deze app zal het volgende uitvoeren:");
-        System.out.println(" 1  - Vul naam in");
+void printMenu() {
+    IO.println("======================================");
+    IO.println("Welkom bij de profiel app");
+    IO.println("Deze app zal het volgende uitvoeren:");
+    IO.println(" 1  - Vul naam in");
 //        Vul hier het menu aan
 
-    }
+}
 
-    private static void printProfile() {
-        System.out.println();
-        System.out.println("----- PROFIEL -----");
-        System.out.println("Naam: " + name);
+void printProfile() {
+    IO.println();
+    IO.println("----- PROFIEL -----");
+    IO.println("Naam: " + name);
 //        Print hier de andere variabelen
 
 //        Roep de calculateBMI() methode aan.
-        System.out.println("-------------------");
-    }
+    IO.println("-------------------");
+}
 
-    private static void setName() {
-        System.out.print("Voer je volledige naam in: ");
-        String input = scanner.nextLine().trim();
-        name = input;
-        System.out.println("Naam opgeslagen: " + name);
-    }
+void setName() {
+    IO.print("Voer je volledige naam in: ");
+    String input = IO.readln().trim();
+    name = input;
+    IO.println("Naam opgeslagen: " + name);
+}
 
 
 //        Schrijf hier de andere methodes
@@ -51,4 +47,3 @@ public class Main {
 
 
 
-}

@@ -2,7 +2,7 @@
 
 ## Inleiding
 
-In deze les hebben we gewerkt met variabelen, if-statements, methodes en de Scanner.
+In deze les hebben we gewerkt met variabelen, methodes en input/output.
 Met deze bouwblokken kan een eenvoudige applicatie worden gemaakt die informatie opslaat en teruggeeft aan de gebruiker.
 
 In deze opdracht ga je een applicatie maken die jou personalia opslaat. We hebben alvast een beginnetje voor je gemaakt. De start code kun je vinden in `src.Main.java`
@@ -40,23 +40,23 @@ De applicatie slaat de volgende gegevens van jou op:
 ### Stap 0
 Open een project met de Main.java uit deze repo. Dit kun je doen op een van de volgende manieren:
 - Hier op de groene `Code` knop te klikken en dan de zip te downloaden. die pak je uit en open je in IntelliJ.
-- Start een nieuw project in IntelliJ en kopieer de code van deze repo naar je eigen Main.java bestand.
-- Als je de git workshop al gevolgd hebt, mag je ook git gebruiken om deze repo te clonen.
+- Start een nieuw project in IntelliJ en kopieer-en-plak de code van deze repo naar je eigen Main.java bestand.
+- Als je de git-workshop al gevolgd hebt, kun je git gebruiken om deze repo te clonen.
 
 ### Stap 1
-Er staat al een variabele voor de scanner en de naam. 
-Definieer variabelen voor de andere variabelen.
+Er staat al een variabele voor de naam. 
+Definieer ook variabelen voor de andere variabelen. (denk aan het juiste type)
 
 
 ### Stap 2
-Maak methodes voor alle variabelen, door er `set` voor te zetten, zoals `public static setName()`.
+Maak methodes voor alle variabelen, door er `set` voor te zetten, zoals `public setName()`.
 
-Voor name, age, email, adres, phone, height en weight hebben deze methodes ze zelfde structuur.
+Voor name, age, email, adres, phone, height en weight hebben deze methodes dezelfde structuur.
 - Als eerst print je wat je van de gebruiker wilt weten.
-- Daarna gebruik je de juiste scanner methode (b.v. `nextLine()` of `nextInt()`) om de input van de gebruiker op te vragen.
+- Daarna gebruik je de `readln()` methode om de input van de gebruiker op te vragen.
 - Als laatste sla je de input op in de variabele 
 
-> Tip: zorg er bij elke input voor dat je de gebruiker laat weten of het succesvol was. (door te printen "... is opgeslagen")
+> Tip: zorg er bij elke input voor dat je de gebruiker laat weten of het succesvol was. (door te printen "xxx is opgeslagen")
 
 ### Stap 3
 Maak de `printProfile()` methode af.
@@ -90,11 +90,11 @@ Deze app zal het volgende uitvoeren:
  9 - Toon profiel
 Voer je naam in: Donald Trump
 Naam opgeslagen: Donald Trump
-
+[...]
 ```
 
 ## BONUS
 
-Voeg een extra optie toe om een geboortedatum in te vullen. Deze mag je in de variabele `static LocalDate birthday;` opslaan. Er bestaat geen `scanner.getLocalDate()` methode, dus je zult op het internet opzoek moeten hoe je dit kunt oplossen. Probeer dit zonder AI te doen.
+Voeg een extra optie toe om een geboortedatum in te vullen. Deze mag je in de variabele `LocalDate birthday;` opslaan. Er bestaat geen `IO.readLocalDate()` methode, dus je zult op het internet opzoek moeten hoe je dit kunt oplossen. Probeer dit zonder AI te doen.
 
       
