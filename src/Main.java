@@ -73,27 +73,27 @@ void setEmail() {
 //        Schrijf hier de andere methodes
 
 void setAddress() {
-    IO.print("Voer je e-mailadres in: ");
+    IO.print("Voer je adres in: ");
     String input = IO.readln().trim();
     address = input;
     IO.println("Adres opgeslagen: " + address);
 }
 
 void setPhone() {
-    IO.print("Voer je e-mailadres in: ");
+    IO.print("Voer je telefoon nummer in: ");
     String input = IO.readln().trim();
     phone = input;
     IO.println("Telefoonnummer opgeslagen: " + phone);
 }
 void setHeight() {
-    IO.print("Voer je e-mailadres in: ");
+    IO.print("Voer je lengte in: ");
     double input = Double.parseDouble(IO.readln());
     height = input;
     IO.println("Lengte opgeslagen: " + height);
 }
 
 void setWeight() {
-    IO.print("Voer je e-mailadres in: ");
+    IO.print("Voer je gewicht in: ");
     double input = Double.parseDouble(IO.readln());
     weight = input;
     IO.println("Lengte opgeslagen: " + weight);
